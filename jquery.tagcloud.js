@@ -44,7 +44,7 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
    this.empty();
    for (var i = 0; i < cl.length; ++i) {
       var tag = cl[i].tag;
-      var tagEl = jQuery('<a href="" class="' options.class + '" style="font-size: '
+      var tagEl = jQuery('<a href="" class="' + options.class + '" style="font-size: '
                            + getNormalizedSize(cl[i].count)
                            + 'em">' + tag + '<\/a>')
                   .data('tag', tag);
