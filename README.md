@@ -11,7 +11,7 @@ http://woophoo.com
 Usage:
 ------
 
-## Basic Usage example.
+### Basic Usage example.
 
 Call it on a jQuery object created from one element and pass an array of
 objects with "tag" and "count" attributes.
@@ -27,6 +27,22 @@ objects with "tag" and "count" attributes.
 
         $("#tagcloud"}.tagCloud(tags);
 
+### Advanced usage example
+
+Similar to the Basic Usage, you could perform an AJAX request, and with the
+response, then build a tag cloud.
+
+        $.ajax('http://example.org/the-tagcloud/').done(function(response)) {
+            $("#tagcloud"}.tagCloud(response.tags, {
+                click: function(tag, e) {
+                    alert("You just clicked on: " + tag);
+                },
+                min: response.min,
+                max: response.max
+            });
+        });
+
+In this example, min & max are calculated inside the JSON data.
 
 Configuration:
 --------------
