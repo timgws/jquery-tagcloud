@@ -55,6 +55,8 @@ Originally based on DynaCloud v3 by Johann Burkard
 <mailto:jb@eaio.com>
 
 CHANGES:
+15 july 2014
+- Add the ability to set max & min and not have tag cloud calculate values.
 
 05 sept. 2008
 - Improved normalization algorithm - better looking font sizes

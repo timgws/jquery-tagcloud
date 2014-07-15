@@ -6,19 +6,24 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
    var defaults = {
       sort: function (a, b) {return a.tag < b.tag ? -1 : (a.tag == b.tag ? 0 : 1)},//default sorting: abc
       click: function(tag) {},
-      maxFontSizeEm: 4
+      maxFontSizeEm: 4,
+      min: -1,
+      max: -1
    }
 
    var options = {};
    jQuery.extend(options, defaults, givenOptions);
 
-   // calculating the max and min count values
-   var max = -1;
-   var min = cl[0].count;
-   $.each(cl, function(i, n) {
-      max = Math.max(n.count, max);
-      min = Math.min(n.count, min);
-   });
+   // calculating the max and min count values,
+   // but we only want to do it if we don't know the max & min values
+   if (max < 0 and min < 0) {
+       var max = -1;
+       var min = cl[0].count;
+       $.each(cl, function(i, n) {
+          max = Math.max(n.count, max);
+          min = Math.min(n.count, min);
+       });
+   }
 
    if (options.sort) {
       cl.sort(options.sort);
