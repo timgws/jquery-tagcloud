@@ -20,28 +20,28 @@ $("#tagcloud"}.tagCloud(tags);
 
 Configuration:
 --------------
-Optionally you can pass a configuration object to tagCloud as the second
-parameter. Allowed settings are:
+You can pass a configuration object to tagCloud as the second parameter.
 
-sort: Comparator function used for sort the tags before displaying, or false if
-   no sorting needed.
+## Configuration Settings:
 
-   default: sort by tag text using
+Allowed settings are:
+
+* `sort`: Comparator function used for sort the tags before displaying, or false if no sorting needed.
+>  default: sort by tag text using
+
           function (a, b) {return a.tag < b.tag ? -1 : (a.tag == b.tag ? 0 : 1)
 
-click: Event handler which receives the tag name as first parameter
+* `click`: Event handler which receives the tag name as first parameter
    and the original click event as second. The preventDefault() is called
    on event before passing so don't bother.
+>  default: does nothing:
 
-   default: does nothing:
           function(tag, event) {}
 
-
-maxFontSizeEm: Size of the largest tag in the cloud in css 'em'. The smallest
+* `maxFontSizeEm`: Size of the largest tag in the cloud in css 'em'. The smallest
    one's size is 1em so this value is the ratio of the smallest and largest
    sizes.
-
-   default: 4
+>  default: 4
 
 
 Styling:
