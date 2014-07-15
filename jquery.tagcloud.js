@@ -7,7 +7,7 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
       sort: function (a, b) {return a.tag < b.tag ? -1 : (a.tag == b.tag ? 0 : 1)},//default sorting: abc
       click: function(tag) {},
       maxFontSize: 4,
-      class: 'tagcloudlink',
+      linkClass: 'tagcloudlink',
       min: -1,
       max: -1
    }
@@ -44,7 +44,7 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
    this.empty();
    for (var i = 0; i < cl.length; ++i) {
       var tag = cl[i].tag;
-      var tagEl = jQuery('<a href="" class="' + options.class + '" style="font-size: '
+      var tagEl = jQuery('<a href="" class="' + options.linkClass + '" style="font-size: '
                            + getNormalizedSize(cl[i].count)
                            + 'em">' + tag + '<\/a>')
                   .data('tag', tag);
