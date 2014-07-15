@@ -14,15 +14,23 @@ Usage:
 Call it on a jQuery object created from one element and pass an array of
 objects with "tag" and "count" attributes. E.g.:
 
-var tags = [{tag: "computers", count: 56}, {tag: "mobile" , count :12}, ... ];
-$("#tagcloud"}.tagCloud(tags);
+        var tags = [
+        {
+            tag: "computers",
+            count: 56
+        }, {
+            tag: "mobile",
+            count :12
+        }, ... ];
+
+        $("#tagcloud"}.tagCloud(tags);
 
 
 Configuration:
 --------------
 You can pass a configuration object to tagCloud as the second parameter.
 
-## Configuration Settings:
+### Configuration Settings:
 
 Allowed settings are:
 
@@ -47,21 +55,19 @@ Allowed settings are:
 Styling:
 --------
  The plugin adds the "tagcloudlink" class to the generated tag links. Note that
-an "&nbsp;" is generated between the links too.
+an "&amp;nbsp;" is generated between the links too.
 
 
 Originally based on DynaCloud v3 by Johann Burkard
 <http://johannburkard.de>
 <mailto:jb@eaio.com>
 
-CHANGES:
-15 july 2014
-- Add the ability to set max & min and not have tag cloud calculate values.
-
-05 sept. 2008
-- Improved normalization algorithm - better looking font sizes
-- New settings: click, maxFontSizeEm
-- Documentation
-
-04 sept. 2008
-- Initial version
+# CHANGES:
+* 15 july 2014 (Tim Groeneveld)
+> - Add the ability to set max & min and not have tag cloud calculate values.
+* 05 sept. 2008 (Schaffer Krisztián)
+> - Improved normalization algorithm - better looking font sizes
+> - New settings: click, maxFontSizeEm
+> -  Documentation
+* 04 sept. 2008 (Schaffer Krisztián)
+> - Initial version
