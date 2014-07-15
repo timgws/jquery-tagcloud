@@ -25,7 +25,7 @@ objects with "tag" and "count" attributes.
             count :12
         }, ... ];
 
-        $("#tagcloud"}.tagCloud(tags);
+        $("#tagcloud").tagCloud(tags);
 
 ### Advanced usage example
 
@@ -33,7 +33,7 @@ Similar to the Basic Usage, you could perform an AJAX request, and with the
 response, then build a tag cloud.
 
         $.ajax('http://example.org/the-tagcloud/').done(function(response)) {
-            $("#tagcloud"}.tagCloud(response.tags, {
+            $("#tagcloud").tagCloud(response.tags, {
                 click: function(tag, e) {
                     alert("You just clicked on: " + tag);
                 },
