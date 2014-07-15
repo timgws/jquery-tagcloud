@@ -11,8 +11,10 @@ http://woophoo.com
 Usage:
 ------
 
+## Basic Usage example.
+
 Call it on a jQuery object created from one element and pass an array of
-objects with "tag" and "count" attributes. E.g.:
+objects with "tag" and "count" attributes.
 
         var tags = [
         {
@@ -64,10 +66,10 @@ Originally based on DynaCloud v3 by Johann Burkard
 
 # CHANGES:
 * 15 july 2014 (Tim Groeneveld)
-> - Add the ability to set max & min and not have tag cloud calculate values.
+** Add the ability to set max & min and not have tag cloud calculate values.
 * 05 sept. 2008 (Schaffer Krisztián)
-> - Improved normalization algorithm - better looking font sizes
-> - New settings: click, maxFontSizeEm
-> -  Documentation
+** Improved normalization algorithm - better looking font sizes
+** New settings: click, maxFontSizeEm
+** Documentation
 * 04 sept. 2008 (Schaffer Krisztián)
-> - Initial version
+** Initial version
