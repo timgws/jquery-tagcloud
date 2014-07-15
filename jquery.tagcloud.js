@@ -16,7 +16,7 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
 
    // calculating the max and min count values,
    // but we only want to do it if we don't know the max & min values
-   if (max < 0 and min < 0) {
+   if (max < 0 && min < 0) {
        var max = -1;
        var min = cl[0].count;
        $.each(cl, function(i, n) {
