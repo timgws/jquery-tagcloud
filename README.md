@@ -69,11 +69,18 @@ Allowed settings are:
    sizes.
 >  default: 4
 
+* `template`: The template that is used to generate a link. Allows different variables.
+ * `tag`: The tag provided in the tags object
+ * `count`: The number of times that the tag appears
+ * `size`: The relative size of the tag (in `em`)
+> default: `<a href="{href}" class="tagcloudlink" style="font-size: {size}em">{tag}</a>`
+
 
 Styling:
 --------
- The plugin adds the "tagcloudlink" class to the generated tag links. Note that
-an "&amp;nbsp;" is generated between the links too.
+By default, the plugin adds the "tagcloudlink" class to the generated tag links.
+Note that an "&amp;nbsp;" is generated between the links too. You can change the
+style by modifying the template that is used to generate the links.
 
 
 Originally based on DynaCloud v3 by Johann Burkard
