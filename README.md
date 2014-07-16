@@ -74,6 +74,8 @@ Allowed settings are:
  * `count`: The number of times that the tag appears
  * `size`: The relative size of the tag (in `em`)
 
+* `data`: object containing data that should be added to all of the links.
+
 Default link template
 ---------------------
     <a href="{href}" class="tagcloudlink" style="font-size: {size}em">{tag}</a>

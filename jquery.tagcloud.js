@@ -9,6 +9,7 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
       maxFontSize: 4,
       min: -1,
       max: -1,
+      data: {},
       template: false
    }
 
@@ -63,10 +64,9 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
           return template_tags[key] || "";
       });
 
-      var tagEl = jQuery('<a href="" class="' + options.linkClass + '" style="font-size: '
-                           + getNormalizedSize(cl[i].count)
-                           + 'em">' + tag + '<\/a>')
-                  .data('tag', tag);
+      var tagEl = jQuery(_text)
+                  .data('tag', tag)
+                  .data(options.data);
 
       if (options.click) {
          tagEl.click(function(event) {
