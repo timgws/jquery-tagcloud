@@ -73,7 +73,10 @@ Allowed settings are:
  * `tag`: The tag provided in the tags object
  * `count`: The number of times that the tag appears
  * `size`: The relative size of the tag (in `em`)
-> default: `<a href="{href}" class="tagcloudlink" style="font-size: {size}em">{tag}</a>`
+
+Default link template
+---------------------
+    <a href="{href}" class="tagcloudlink" style="font-size: {size}em">{tag}</a>
 
 
 Styling:
