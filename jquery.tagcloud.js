@@ -53,7 +53,7 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
    this.empty();
    for (var i = 0; i < cl.length; ++i) {
       var tag = cl[i].tag;
-      var count = cl[1].count;
+      var count = cl[i].count;
       var template_tags = {
           "tag": tag,
           "size": getNormalizedSize(count),
