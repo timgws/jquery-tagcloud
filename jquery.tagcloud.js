@@ -7,7 +7,6 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
       sort: function (a, b) {return a.tag < b.tag ? -1 : (a.tag == b.tag ? 0 : 1)},//default sorting: abc
       click: function(tag) {},
       maxFontSize: 4,
-      linkClass: 'tagcloudlink',
       min: -1,
       max: -1,
       template: false
@@ -38,7 +37,7 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
    if (options.template) {
        text = options.template;
    } else {
-       text = '<a href="{href}" class="{class}" style="font-size: {size}em">{tag}<\/a>';
+       text = '<a href="{href}" class="tagcloudlink" style="font-size: {size}em">{tag}<\/a>';
    }
 
    //Normalization helper
@@ -57,8 +56,7 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
       var template_tags = {
           "tag": tag,
           "size": getNormalizedSize(count),
-          "count": count,
-          "class": options.linkClass
+          "count": count
       };
 
       var _text = text.replace(/{([^{}]+)}/g, function(m, key){
