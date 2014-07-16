@@ -59,8 +59,8 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
           "class": options.linkClass
       };
 
-      var _text = text.replace(/{[^{}]+}/g, function(key){
-              return template_tags[key.replace(/[{}]+/g, "")] || "";
+      var _text = text.replace(/{([^{}]+)}/g, function(m, key){
+          return template_tags[key] || "";
       });
 
       var tagEl = jQuery('<a href="" class="' + options.linkClass + '" style="font-size: '
