@@ -9,9 +9,11 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
       maxFontSize: 4,
       linkClass: 'tagcloudlink',
       min: -1,
-      max: -1
+      max: -1,
+      template: false
    }
 
+   var text = '';
    var options = {};
    jQuery.extend(options, defaults, givenOptions);
 
@@ -32,6 +34,13 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
       cl.sort(options.sort);
    }
 
+   // Make sure that we have the correct text for the tagcloud.
+   if (options.template) {
+       text = options.template;
+   } else {
+       text = '<a href="{href}" class="{class}" style="font-size: {size}em">{tag}<\/a>';
+   }
+
    //Normalization helper
    var diff = ( max == min ? 1    // if all values are equal, do not divide by zero
                            : (max - min) / (options.maxFontSize - 1) ); //optimization: Originally we want to divide by diff
@@ -44,6 +53,16 @@ jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function()
    this.empty();
    for (var i = 0; i < cl.length; ++i) {
       var tag = cl[i].tag;
+      var template_tags = {
+          "tag": tag,
+          "size": getNormalizedSize(cl[i].count),
+          "class": options.linkClass
+      };
+
+      var _text = text.replace(/{[^{}]+}/g, function(key){
+              return template_tags[key.replace(/[{}]+/g, "")] || "";
+      });
+
       var tagEl = jQuery('<a href="" class="' + options.linkClass + '" style="font-size: '
                            + getNormalizedSize(cl[i].count)
                            + 'em">' + tag + '<\/a>')
