@@ -91,6 +91,8 @@ Originally based on DynaCloud v3 by Johann Burkard
 <mailto:jb@eaio.com>
 
 # CHANGES:
+* 16 july 2014 (Tim Groeneveld)
+ * Allow the link layout to be changed with the "template" option.
 * 15 july 2014 (Tim Groeneveld)
  * Add the ability to set max & min and not have tag cloud calculate values.
  * Improved documentation a little.
