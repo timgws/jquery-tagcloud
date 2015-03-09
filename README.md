@@ -94,15 +94,15 @@ Originally based on DynaCloud v3 by Johann Burkard
 
 # CHANGES:
 * 9 march 2015 (Tim Groeneveld)
-** Prepare repository for adding to jQuery Plugin Repository
+ * Prepare repository for adding to jQuery Plugin Repository
 * 16 july 2014 (Tim Groeneveld)
-** Allow the link layout to be changed with the "template" option.
+ * Allow the link layout to be changed with the "template" option.
 * 15 july 2014 (Tim Groeneveld)
-** Add the ability to set max & min and not have tag cloud calculate values.
-** Improved documentation a little.
+ * Add the ability to set max & min and not have tag cloud calculate values.
+ * Improved documentation a little.
 * 05 sept. 2008 (Schaffer Krisztián)
-** Improved normalization algorithm - better looking font sizes
-** New settings: click, maxFontSizeEm
-** Documentation
+ * Improved normalization algorithm - better looking font sizes
+ * New settings: click, maxFontSizeEm
+ * Documentation
 * 04 sept. 2008 (Schaffer Krisztián)
-** Initial version
+ * Initial version

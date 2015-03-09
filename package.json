@@ -7,7 +7,7 @@
     "ecosystem:jquery",
     "tagcloud"
   ],
-  "version": "1.1.0",
+  "version": "1.1.0-2",
   "author": {
     "name": "Tim Groeneveld",
     "url": "https://github.com/timgws"
