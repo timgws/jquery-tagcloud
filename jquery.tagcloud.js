@@ -1,3 +1,7 @@
+/**
+ * jQuery Tagcloud Plugin
+ * @version 1.1
+ */
 jQuery.fn.tagCloud = function(cl, givenOptions) { //return this.each( function() { //like a real jQuery plugin: run on on each element
    if (!cl || !cl.length)
       return this;

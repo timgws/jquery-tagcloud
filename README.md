@@ -5,8 +5,8 @@ the cloud is generated from an array.
 
 MIT license.
 
-Schaffer Krisztián
-http://woophoo.com
+* Original: Schaffer Krisztián: http://woophoo.com
+* Updated: Tim Groeneveld: http://timg.ws
 
 Usage:
 ------
@@ -93,6 +93,8 @@ Originally based on DynaCloud v3 by Johann Burkard
 <mailto:jb@eaio.com>
 
 # CHANGES:
+* 9 march 2015 (Tim Groeneveld)
+ * Prepare repository for adding to jQuery Plugin Repository
 * 16 july 2014 (Tim Groeneveld)
  * Allow the link layout to be changed with the "template" option.
 * 15 july 2014 (Tim Groeneveld)

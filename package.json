@@ -1,0 +1,27 @@
+{
+  "name": "tagcloud",
+  "title": "jQuery Tagcloud",
+  "description": "A simple tag cloud library.",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "tagcloud"
+  ],
+  "version": "1.1",
+  "author": {
+    "name": "Tim Groeneveld",
+    "url": "https://github.com/timgws"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "bugs": "https://github.com/timgws/jquery-tagcloud/issues",
+  "homepage": "https://github.com/timgws/jquery-tagcloud",
+  "repository": "https://github.com/timgws/jquery-tagcloud",
+  "dependencies": {
+    "jquery": ">=1.4"
+  }
+}
